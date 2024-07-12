@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class GoodsApp {
+public class GoodsApp_while {
 
     public static void main(String[] args) {
     	
@@ -13,8 +13,7 @@ public class GoodsApp {
     	
     	System.out.println("상품을 입력해주세요(종료 q)");
     	
-    	
-    	for (int i = 0 ; i < 100 ; i++) {/////////////////error100
+    	while (true) {
     		
     		String re = sc.nextLine();
     		
@@ -33,17 +32,8 @@ public class GoodsApp {
     		
     		gList.add(g);
     		
-    		/*
-    		new Goods().setName(n[0]);
-    		new Goods().setPrice(n[1]);
-    		new Goods().setCount(n[2]);
-    		
-    		gList.add(new Goods().setName(n[0]));
-    		gList.add(new Goods().setPrice(Integer.parseInt(n[1])));
-    		gList.add(new Goods().setCount(Integer.parseInt(n[2])));
-    		*/
-    		
     	}
+    	
     	
     	int total=0;
     	for (int i = 0; i < gList.size(); i++) {
